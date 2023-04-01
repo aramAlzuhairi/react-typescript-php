@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf '..\\build-app\\bundle' && webpack --progress --env.NODE_ENV=production --mode production",
-    "watch": "rm -rf '..\\build-app\\bundle' && webpack --color -w --node-env=development --mode development",
+    "build:prod": "rm -rf ../build-app && webpack --progress --env.NODE_ENV=production --mode production",
+    "build:dev": "rm -rf ../build-app && webpack --color -w --node-env=development --mode development",
     "help": "webpack --help"
   },
   "dependencies": {
